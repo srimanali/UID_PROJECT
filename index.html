@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fun Typing Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN OVERLAY -->
+  <div id="login-overlay">
+    <div id="login-box">
+      <h2>Login</h2>
+      <div id="login-error"></div>
+      <input type="text" id="username" placeholder="Username" autocomplete="off" />
+      <input type="password" id="password" placeholder="Password" autocomplete="off" />
+      <button id="login-btn">Log In</button>
+    </div>
+  </div>
+  <!-- MAIN APP CONTAINER -->
+  <div id="main-container" class="container">
+    <header>
+      Fun Typing Practice
+      <button id="logout-btn">Logout</button>
+    </header>
+    <main>
+      <div id="left-panel">
+        <ul>
+          <li id="menu-home" onclick="loadContent('home')">Home</li>
+          <li id="menu-typing" onclick="loadContent('typing')">Typing Trainer</li>
+          <li id="menu-scramble" onclick="loadContent('scramble')">Word Scramble</li>
+          <li id="menu-speed" onclick="loadContent('speed')">Speed Typing</li>
+          <li id="menu-memory" onclick="loadContent('memory')">Memory Sequence</li>
+          <li id="menu-balloon" onclick="loadContent('balloon')">Balloon Typing Game</li>
+          <li id="menu-tutorial" onclick="loadContent('tutorial')">Tutorial</li>
+          <li id="menu-about" onclick="loadContent('about')">About Us</li>
+          <li id="menu-contact" onclick="loadContent('contact')">Contact Us</li>
+        </ul>
+      </div>
+      <div id="right-panel"></div>
+    </main>
+    <footer>
+      <span>Tip: Accuracy is more important than speed. Practice daily!</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
